@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const ProductDetail = ({product}) => {
   return (
     <div className="flex flex-col justify-between w-5/12 shadow-md rounded-md overflow-hidden">
-      <Link to={`/products/${product.id}`}>
+      <Link to={`/product/${product.id}`}>
         <div className="flex flex-col items-center gap-3 p-4">
           <img
             src={product.image}
