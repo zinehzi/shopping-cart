@@ -4,7 +4,7 @@ import Contact from "../components/Contact";
 import App from "../App";
 import Layout from "../components/Layout";
 import Checkout from "../components/Checkout";
-import ProductSinglePage from "../components/ProductSinglePage";
+import ProductDetail from "../components/ProductDetail";
 
 const router = createBrowserRouter([
   {
@@ -24,8 +24,8 @@ const router = createBrowserRouter([
         element: <Contact />,
       },
       {
-        path: ":id",
-        element: <ProductSinglePage />,
+        path: "/products/:id",
+        element: <ProductDetail />,
       },
     ],
   },

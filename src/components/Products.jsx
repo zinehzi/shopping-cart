@@ -1,4 +1,4 @@
-import getProducts from "../api/products";
+import { getProducts } from "../api/products";
 import { useQuery } from "@tanstack/react-query";
 import ProductItem from "./ProductItem";
 
