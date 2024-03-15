@@ -11,9 +11,9 @@ const ProductDetail = () => {
 
 
   return (
-    <div>
+    <div className="flex flex-col w-3/6 shadow-md rounded-md overflow-hidden">
       <div className="flex flex-col items-center gap-3 p-4">
-        <img src={data?.image} alt={data?.title} className="w-24 h-24"></img>
+        <img src={data?.image} alt={data?.title} className="w-40 h-40"></img>
         <span>{data?.title}</span>
       </div>
       <div className="flex flex-col items-center gap-2">

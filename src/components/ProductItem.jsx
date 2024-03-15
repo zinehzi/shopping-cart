@@ -1,6 +1,10 @@
+import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
+import { addToCart } from "../store/slices/cartSlice";
 
-const ProductDetail = ({product}) => {
+const ProductDetail = ({ product }) => {
+  const dispatch = useDispatch();
+
   return (
     <div className="flex flex-col justify-between w-5/12 shadow-md rounded-md overflow-hidden">
       <Link to={`/product/${product.id}`}>
@@ -18,6 +22,7 @@ const ProductDetail = ({product}) => {
         <button
           type="button"
           className="flex items-center justify-center gap-2 py-2 bg-gray-300 w-full"
+          onClick={() => dispatch(addToCart(product))}
         >
           <img src="../../src/assets/images/cart.png" className="w-4 h-4" />
           <span>Add To Cart</span>

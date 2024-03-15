@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   return (
-    <aside className="flex flex-col w-2/6 border border-l pt-4">
+    <aside className="flex flex-col w-2/6 border border-l pt-4 h-full">
       <ul className="p-4">
         <li>product1</li>
         <li>product2</li>
